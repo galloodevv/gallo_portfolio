@@ -61,8 +61,6 @@
 			window.onbeforeunload = function () {
 				window.scrollTo(0, 0);
 			};
-
-			// Función para actualizar la sección activa
 			function updateActiveSection() {
 				const sections = document.querySelectorAll('div[id]');
 				const navLinks = document.querySelectorAll('header a[href^="#"]');
@@ -78,7 +76,6 @@
 					}
 				});
 				
-				// Actualizar clases en los enlaces de navegación
 				navLinks.forEach(link => {
 					const href = link.getAttribute('href').substring(1); // Remover el #
 					if (href === currentSectionId) {
@@ -90,8 +87,6 @@
 					}
 				});
 			}
-
-			// Ejecutar al cargar y al hacer scroll
 			document.addEventListener('DOMContentLoaded', updateActiveSection);
 			window.addEventListener('scroll', updateActiveSection);
 		</script>
