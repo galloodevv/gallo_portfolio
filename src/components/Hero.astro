@@ -66,7 +66,11 @@
 		<div class="space-y-12">
 			<div class="bg-gradient-to-br from-[#1E1E3F] to-[#13132F] transition-all duration-500 p-8 rounded-lg grid md:grid-cols-2 gap-8 items-center backdrop-blur-sm border border-purple-500/10 shadow-xl">
 				<div class="relative group">
-					<img src="/pausemenu.png" alt="Fivem Pause Menu" class="rounded-lg w-full">
+					<img 
+						src="/pausemenu.png" 
+						alt="Fivem Pause Menu" 
+						class="rounded-lg w-full h-[300px] object-cover"
+					>
 					<div class="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors duration-300 rounded-lg"></div>
 				</div>
 				<div>
@@ -87,7 +91,7 @@
 							Lua
 						</span>
 						<span class="bg-[#1B1B3A]/80 text-[#bd34fe] px-3 py-1 rounded-full text-sm font-medium flex items-center gap-2">
-							<img src="https://imgs.search.brave.com/g_gpVRkBBYvR0yq3kkJoqZPZGPi_-zLVNs9Iy5q7QhE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly92aXRl/anMuZGV2L2xvZ28t/d2l0aC1zaGFkb3cu/cG5n" alt="Vite" class="w-4 h-4" />
+							<img src="https://imgs.search.brave.com/g_gpVRkBBYvR0yq3kkJoqZPZGPi_-zLVNs9Iy5q7QhE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92aXRl/anMuZGV2L2xvZ28t/d2l0aC1zaGFkb3cu/cG5n" alt="Vite" class="w-4 h-4" />
 							Vite
 						</span>
 					</div>
@@ -103,7 +107,11 @@
 
 			<div class="bg-gradient-to-br from-[#1E1E3F] to-[#13132F] transition-all duration-500 p-8 rounded-lg grid md:grid-cols-2 gap-8 items-center backdrop-blur-sm border border-purple-500/10 shadow-xl">
 				<div class="relative group">
-					<img src="https://cdn.discordapp.com/attachments/1338991524230332427/1340334654468919328/image.png?ex=67bf2a6b&is=67bdd8eb&hm=ea472b0c6abe7fe1f646305f012102d6513c60fa29adb1bb2b46d976e541b9f9&" alt="Gallo Portfolio" class="rounded-lg w-full">
+					<img 
+						src="https://i.imgur.com/ylT4nXf.png" 
+						alt="Gallo Portfolio" 
+						class="rounded-lg w-full h-[300px] object-cover"
+					>
 					<div class="absolute inset-0 bg-blue-500/10 group-hover:bg-transparent transition-colors duration-300 rounded-lg"></div>
 				</div>
 				<div>
@@ -365,7 +373,6 @@
 		animation: border-pulse 2s ease-in-out infinite;
 	}
 
-	/* Añade un efecto de desenfoque al fondo cuando se carga la página */
 	@keyframes blur-in {
 		from {
 			backdrop-filter: blur(0);
@@ -375,7 +382,6 @@
 		}
 	}
 
-	/* Animación para las secciones cuando aparecen en el viewport */
 	.section-animate {
 		opacity: 0;
 		transform: translateY(20px);
@@ -387,7 +393,6 @@
 		transform: translateY(0);
 	}
 
-	/* Añade un efecto de "highlight" cuando la sección está en foco */
 	div[id].section-focus::before {
 		content: '';
 		position: absolute;
@@ -415,7 +420,6 @@
 </style>
 
 <script>
-	// Añade la clase in-view a las secciones cuando aparecen en el viewport
 	const sections = document.querySelectorAll('.section-animate');
 
 	const observer = new IntersectionObserver((entries) => {
