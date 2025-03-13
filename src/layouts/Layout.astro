@@ -68,7 +68,7 @@
 				let currentSectionId = '';
 				
 				sections.forEach(section => {
-					const sectionTop = section.offsetTop - 100; // Offset para mejor detección
+					const sectionTop = section.offsetTop - 100;
 					const sectionHeight = section.offsetHeight;
 					
 					if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
@@ -77,7 +77,7 @@
 				});
 				
 				navLinks.forEach(link => {
-					const href = link.getAttribute('href').substring(1); // Remover el #
+					const href = link.getAttribute('href').substring(1);
 					if (href === currentSectionId) {
 						link.classList.add('text-purple-400');
 						link.classList.remove('text-gray-300');
@@ -160,7 +160,6 @@
 		display: none;
 	}
 
-	/* Transición suave para el cambio de color */
 	header a {
 		transition: color 0.3s ease;
 	}
